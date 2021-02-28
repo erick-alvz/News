@@ -1,0 +1,16 @@
+apply from: "$rootProject.projectDir/modules.build.gradle"
+
+dependencies {
+
+
+
+    implementation (squareup.okhttp)
+    implementation (squareup.okhttp_interceptor)
+    implementation (squareup.reftrofit)
+    implementation (squareup.jacksonConverter)
+    implementation (squareup.rxJavaAdapter)
+    implementation (squareup.jackson)
+
+    implementation project(path: ':domain')
+
+}

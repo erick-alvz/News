@@ -1,0 +1,57 @@
+ext {
+
+    androidConfig = [
+
+            "compileSdkVersion": 30,
+            "buildToolsVersion": "30.0.3",
+
+            "minSdkVersion"    : 21,
+            "targetSdkVersion" : 30,
+
+            "versionCode"      : 1,
+            "versionName"      : "0.001",
+
+
+    ]
+
+    versions = [
+            "room"                 : "2.2.6",
+            "okhttp"               : "4.9.0",
+            "jackson_kotlin_module": "2.12.0",
+
+            "jackson"              : "2.9.0",
+            "adapter_rxjava2"      : "2.9.0",
+            "retrofit"             : "2.9.0 ",
+
+            "rx_kotlin"              : "2.4.0",
+            "rx_android"           : "2.1.1",
+
+            "dagger"               : "2.28.3"
+
+    ]
+
+    room = [
+            "room"    : "androidx.room:room-runtime:${versions.room}",
+            "compiler": "androidx.room:room-compiler:${versions.room}",
+    ]
+
+    squareup = [
+            "okhttp"            : "com.squareup.okhttp3:okhttp:${versions.okhttp}",
+            "okhttp_interceptor": "com.squareup.okhttp3:logging-interceptor:${versions.okhttp}",
+            "reftrofit"         : "com.squareup.retrofit2:retrofit:${versions.retrofit}",
+            "jacksonConverter"  : "com.squareup.retrofit2:converter-jackson:${versions.jackson}",
+            "jackson"           : "com.fasterxml.jackson.module:jackson-module-kotlin:${versions.jackson_kotlin_module}",
+            "rxJavaAdapter"     : "com.squareup.retrofit2:adapter-rxjava2:${versions.adapter_rxjava2}",
+    ]
+
+    rx = [
+            "rxKotlin" : "io.reactivex.rxjava2:rxkotlin:${versions.rx_kotlin}",
+            "rxAndroid": "io.reactivex.rxjava2:rxandroid:${versions.rx_android}"
+    ]
+
+    dagger = [
+            "dagger"        : "com.google.dagger:dagger:${versions.dagger}",
+            "daggerCompiler": "com.google.dagger:dagger-compiler:${versions.dagger}",
+    ]
+
+}
